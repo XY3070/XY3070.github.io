@@ -1,5 +1,5 @@
-name: "Pianfan's blog"
-description: "翩帆的个人技术博客"
+name: "XY's Blog"
+description: "Like a digital garden."
 
 avatar: https://pianfan.github.io/images/avatar.png
 favicon: https://pianfan.github.io/images/favicon.ico
@@ -17,17 +17,17 @@ paginate: 8
 excerpt_separator: <!-- more -->
 
 footer-links:
-  zhihu: 
-  email: xiongyunhan@outlook.com
+  zhihu: https://www.zhihu.com/people/3070_homepage
+  email: xy053070@gmail.com
   facebook:
-  github: pianfan
+  github: XY3070
   rss: # just type anything here for a working RSS icon
   twitter: 
   youtube:
 
-footer-text: Copyright (c) 2024 Pianfan
+footer-text: Copyright (c) 2024 XY
 
-url: https://pianfan.github.io
+url: https://XYsama.github.io
 
 permalink: /:title/
 paginate_path: /page:num/
