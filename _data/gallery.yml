@@ -1,0 +1,21 @@
+# _data/gallery.yml
+- category: "旅行足迹"
+  slug: "travel" # 用于URL或内部标识
+  description: "记录我在世界各地的旅行瞬间，感受不同文化与风景。"
+  photos:
+    - image: "/images/gallery/travel/paris_eiffel.jpg"
+      title: "巴黎铁塔下的浪漫"
+      description: "2023年夏，在巴黎埃菲尔铁塔下，感受法式浪漫。"
+    - image: "/images/gallery/travel/japan_sakura.jpg"
+      title: "京都樱花盛开"
+      description: "2022年春，京都的樱花如雪般绽放，美不胜收。"
+- category: "生活点滴"
+  slug: "life"
+  description: "捕捉日常生活中的美好与感动。"
+  photos:
+    - image: "/images/gallery/life/my_pet.jpg"
+      title: "我的小猫咪"
+      description: "家里的小可爱，总是能带来欢乐。"
+    - image: "/images/gallery/life/daily_moment.jpg"
+      title: "午后咖啡时光"
+      description: "一个悠闲的下午，一杯咖啡，一本书。"

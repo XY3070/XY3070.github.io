@@ -1,0 +1,25 @@
+---
+layout: default # 或者您可以创建一个专门的 gallery 布局
+title: 我的画廊
+permalink: /gallery/
+---
+
+<h1>{{ page.title }}</h1>
+
+{% for category in site.data.gallery %}
+  <section class="gallery-category">
+    <h2>{{ category.category }}</h2>
+    <p>{{ category.description }}</p>
+    <div class="photos-grid">
+      {% for photo in category.photos %}
+        <figure class="gallery-item">
+          <img src="{{ photo.image }}" alt="{{ photo.title }}">
+          <figcaption>
+            <h3>{{ photo.title }}</h3>
+            <p>{{ photo.description }}</p>
+          </figcaption>
+        </figure>
+      {% endfor %}
+    </div>
+  </section>
+{% endfor %}
