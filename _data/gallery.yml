@@ -2,6 +2,7 @@
 - category: "Traveling: Hong Kong"
   slug: "travel-HK" # 用于URL或内部标识
   permalink: /gallery/travel-HK/
+  cover_image: "/images/gallery/travel-HK/红花.png" # 新增封面图字段
   description: "香港。"
   photos:
     - image: "/images/gallery/travel-HK/红花.png"
@@ -13,6 +14,7 @@
 - category: "生活点滴"
   slug: "life"
   permalink: /gallery/life/
+  cover_image: "/images/gallery/life/my_pet.jpg" # 新增封面图字段
   description: "捕捉日常生活中的美好与感动。"
   photos:
     - image: "/images/gallery/life/my_pet.jpg"
