@@ -1,6 +1,7 @@
 # _data/gallery.yml
 - category: "旅行足迹"
   slug: "travel" # 用于URL或内部标识
+  permalink: /gallery/travel/
   description: "记录我在世界各地的旅行瞬间，感受不同文化与风景。"
   photos:
     - image: "/images/gallery/travel/paris_eiffel.jpg"
@@ -11,6 +12,7 @@
       description: "2022年春，京都的樱花如雪般绽放，美不胜收。"
 - category: "生活点滴"
   slug: "life"
+  permalink: /gallery/life/
   description: "捕捉日常生活中的美好与感动。"
   photos:
     - image: "/images/gallery/life/my_pet.jpg"

@@ -1,0 +1,23 @@
+{% include head.html %}
+
+<div class="wrapper">
+    <div class="gallery-album-container">
+        <h1>{{ page.title }}</h1>
+        <p class="album-description">{{ page.description }}</p>
+
+        <div class="photos-grid">
+            {% for photo in page.photos %}
+            <div class="gallery-item">
+                <img src="{{ photo.image }}" alt="{{ photo.alt | default: photo.title }}">
+                {% if photo.title %}<figcaption>{{ photo.title }}</figcaption>{% endif %}
+                {% if photo.description %}<p>{{ photo.description }}</p>{% endif %}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+{% include footer.html %}
+<script src="/js/gallery.js"></script>
+</body>
+</html>
