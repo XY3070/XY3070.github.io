@@ -57,6 +57,10 @@ plugins:
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
   - jekyll-paginate
 
+collections:
+  gallery_albums:
+    output: true
+
 # Exclude these files from your production _site
 exclude:
   - Gemfile
