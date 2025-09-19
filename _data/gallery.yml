@@ -1,13 +1,13 @@
 # _data/gallery.yml
-- category: "旅行足迹"
-  slug: "travel" # 用于URL或内部标识
-  permalink: /gallery/travel/
-  description: "记录我在世界各地的旅行瞬间，感受不同文化与风景。"
+- category: "Traveling: Hong Kong"
+  slug: "travel-HK" # 用于URL或内部标识
+  permalink: /gallery/travel-HK/
+  description: "香港。"
   photos:
-    - image: "/images/gallery/travel/paris_eiffel.jpg"
-      title: "巴黎铁塔下的浪漫"
+    - image: "/images/gallery/travel-HK/红花.png"
+      title: "Hong Kong Flower"
       description: "2023年夏，在巴黎埃菲尔铁塔下，感受法式浪漫。"
-    - image: "/images/gallery/travel/japan_sakura.jpg"
+    - image: "/images/gallery/travel-HK/japan_sakura.jpg"
       title: "京都樱花盛开"
       description: "2022年春，京都的樱花如雪般绽放，美不胜收。"
 - category: "生活点滴"
