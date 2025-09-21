@@ -3,18 +3,26 @@
 <div class="wrapper">
     <div class="gallery-album-container">
         <h1>{{ page.title }}</h1>
-        <p class="album-description">{{ page.description }}</p>
+        <p class="album-description">{{ page.album_description }}</p>
 
         <div class="photos-grid">
             {% for photo in page.photos %}
             <div class="gallery-item">
-                <img src="{{ photo.image }}" alt="{{ photo.alt | default: photo.title }}">
+                <img src="{{ photo.image }}" alt="{{ photo.alt | default: photo.title }}" onclick="openLightbox('{{ photo.image }}')">
                 {% if photo.title %}<figcaption>{{ photo.title }}</figcaption>{% endif %}
                 {% if photo.description %}<p>{{ photo.description }}</p>{% endif %}
             </div>
             {% endfor %}
         </div>
     </div>
+</div>
+
+<!-- The Lightbox Modal -->
+<div id="myLightbox" class="lightbox">
+  <span class="close cursor" onclick="closeLightbox()">&times;</span>
+  <div class="lightbox-content">
+    <img id="lightboxImg" src="">
+  </div>
 </div>
 
 {% include footer.html %}

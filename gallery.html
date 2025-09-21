@@ -10,12 +10,14 @@ permalink: /gallery/
       <div class="album-card">
         {% if album.cover_image %}
           <img src="{{ album.cover_image | relative_url }}" alt="{{ album.title }}" class="album-cover-image">
+        {% elsif album.photos[0].image %}
+          <img src="{{ album.photos[0].image | relative_url }}" alt="{{ album.title }}" class="album-cover-image">
         {% else %}
           <img src="{{ '/images/placeholder.jpg' | relative_url }}" alt="Placeholder" class="album-cover-image">
         {% endif %}
         <div class="album-info">
           <h2>{{ album.title }}</h2>
-          <p>{{ album.description }}</p>
+          <p>{{ album.album_description }}</p>
         </div>
       </div>
     </a>
