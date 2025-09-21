@@ -4,6 +4,8 @@ description: "Like a digital garden."
 avatar: https://pianfan.github.io/images/avatar.png
 favicon: https://pianfan.github.io/images/favicon.ico
 
+baseurl: "" # the subpath of your site, e.g. /blog
+
 navigation:
   - name: 首页
     url: /
