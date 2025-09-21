@@ -60,6 +60,7 @@ plugins:
 collections:
   gallery_albums:
     output: true
+    permalink: /gallery/:name/
 
 # Exclude these files from your production _site
 exclude:
