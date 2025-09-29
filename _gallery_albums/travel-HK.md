@@ -1,6 +1,6 @@
 ---
 layout: gallery_album
-title: Traveling: Hong Kong
+title: "Traveling: Hong Kong"
 output: true
 album_description: 香港。
 cover_image: "{{ site.baseurl }}/images/gallery/travel-HK/红花.png"
