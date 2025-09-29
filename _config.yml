@@ -4,7 +4,8 @@ description: "Like a digital garden."
 avatar: https://pianfan.github.io/images/avatar.png
 favicon: https://pianfan.github.io/images/favicon.ico
 
-baseurl: "" # the subpath of your site, e.g. /blog
+# 用户主页仓库，不需要 baseurl
+baseurl: ""
 
 navigation:
   - name: 首页
@@ -25,7 +26,7 @@ footer-links:
   email: xy053070@gmail.com
   facebook:
   github: XY3070
-  rss: # just type anything here for a working RSS icon
+  rss:
   twitter: 
   youtube:
 
@@ -33,7 +34,9 @@ footer-text: Copyright (c) 2024 XY
 
 url: https://XY3070.github.io
 
-permalink: /:title/
+# ⚠️ 删除了全局 permalink: /:title/
+# 避免覆盖 collections 的 permalink 规则
+
 paginate_path: /page:num/
 
 # The release of Jekyll Now
@@ -41,22 +44,17 @@ version: v1.2.0
 
 # Jekyll 3 now only supports Kramdown for Markdown
 kramdown:
-  # Use GitHub flavored markdown, including triple backtick fenced code blocks
   input: GFM
-  # Jekyll 3 and GitHub Pages now only support rouge for syntax highlighting
   syntax_highlighter: rouge
   syntax_highlighter_opts:
-    # Use existing pygments syntax highlighting css
     css_class: 'highlight'
 
-# Set the Sass partials directory, as we're using @imports
 sass:
-  style: :expanded # You might prefer to minify using :compressed
+  style: :expanded
 
-# Use the following plug-ins
 plugins:
-  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
-  - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
+  - jekyll-sitemap
+  - jekyll-feed
   - jekyll-paginate
 
 collections:
@@ -64,11 +62,9 @@ collections:
     output: true
     permalink: /gallery/:name/
 
-# Exclude these files from your production _site
 exclude:
   - Gemfile
   - Gemfile.lock
   - LICENSE
   - README.md
   - GALLERY_STRUCTURE.md
-
