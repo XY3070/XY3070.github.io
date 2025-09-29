@@ -70,4 +70,5 @@ exclude:
   - Gemfile.lock
   - LICENSE
   - README.md
+  - GALLERY_STRUCTURE.md
 
